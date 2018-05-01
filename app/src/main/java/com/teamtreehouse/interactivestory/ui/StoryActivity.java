@@ -1,10 +1,13 @@
-package com.teamtreehouse.interactivestory;
+package com.teamtreehouse.interactivestory.ui;
 
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.teamtreehouse.interactivestory.R;
+import com.teamtreehouse.interactivestory.model.Page;
 
 
 public class StoryActivity extends AppCompatActivity {
@@ -24,5 +27,6 @@ public class StoryActivity extends AppCompatActivity {
             name = "Friend";
         }
         Log.d(TAG, name);
+
     }
 }
