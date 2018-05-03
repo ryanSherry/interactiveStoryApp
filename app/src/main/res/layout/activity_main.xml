@@ -7,13 +7,38 @@
     android:layout_height="match_parent"
     tools:context="com.teamtreehouse.interactivestory.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/titleImageView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:adjustViewBounds="true"
+        android:contentDescription="Signals from Mars Title Image"
+        android:scaleType="fitEnd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/inputtype"
+        app:srcCompat="@drawable/main_title" />
+
+    <EditText
+        android:id="@+id/inputtype"
+        android:hint="Enter your name"
+        android:maxLength="30"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/titleImageView"
+        app:layout_constraintBottom_toTopOf="@id/startAdventureButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/startAdventureButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
+        app:layout_constraintTop_toBottomOf="@id/inputtype"
+        android:text="START YOUR ADVENTURE"/>
 </android.support.constraint.ConstraintLayout>
