@@ -1,5 +1,7 @@
 package com.teamtreehouse.interactivestory.model;
 
+import android.util.Log;
+
 public class Choice {
     public Choice(int textId, int nextPage) {
         this.textId = textId;
@@ -7,7 +9,6 @@ public class Choice {
     }
 
     public int getTextId() {
-
         return textId;
     }
 
