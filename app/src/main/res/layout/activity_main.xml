@@ -12,34 +12,34 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:contentDescription="Signals from Mars Title Image"
+        android:contentDescription="@string/signals_from_mars_title_image"
         android:scaleType="fitEnd"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/inputtype"
+        app:layout_constraintBottom_toTopOf="@id/nameEditText"
         app:srcCompat="@drawable/main_title" />
 
     <EditText
-        android:id="@+id/inputtype"
-        android:hint="Enter your name"
+        android:id="@+id/nameEditText"
+        android:hint="@string/enter_your_name"
         android:maxLength="30"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="textCapWords|textPersonName"
         android:background="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/titleImageView"
-        app:layout_constraintBottom_toTopOf="@id/startAdventureButton"
+        app:layout_constraintBottom_toTopOf="@id/startButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/startAdventureButton"
+        android:id="@+id/startButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputtype"
-        android:text="START YOUR ADVENTURE"/>
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        android:text="@string/start_your_adventure"/>
 </android.support.constraint.ConstraintLayout>
